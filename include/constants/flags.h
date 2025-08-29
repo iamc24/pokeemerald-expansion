@@ -43,20 +43,20 @@
 #define TEMP_FLAGS_END   FLAG_TEMP_1F
 #define NUM_TEMP_FLAGS   (TEMP_FLAGS_END - TEMP_FLAGS_START + 1)
 
-#define FLAG_UNUSED_0x020    0x20 // Unused Flag
-#define FLAG_UNUSED_0x021    0x21 // Unused Flag
-#define FLAG_UNUSED_0x022    0x22 // Unused Flag
-#define FLAG_UNUSED_0x023    0x23 // Unused Flag
-#define FLAG_UNUSED_0x024    0x24 // Unused Flag
-#define FLAG_UNUSED_0x025    0x25 // Unused Flag
-#define FLAG_UNUSED_0x026    0x26 // Unused Flag
-#define FLAG_UNUSED_0x027    0x27 // Unused Flag
-#define FLAG_UNUSED_0x028    0x28 // Unused Flag
-#define FLAG_UNUSED_0x029    0x29 // Unused Flag
-#define FLAG_UNUSED_0x02A    0x2A // Unused Flag
-#define FLAG_UNUSED_0x02B    0x2B // Unused Flag
-#define FLAG_UNUSED_0x02C    0x2C // Unused Flag
-#define FLAG_UNUSED_0x02D    0x2D // Unused Flag
+#define FLAG_EXP_SHARE_TOGGLE    0x20 // Gen 6 Exp All
+#define FLAG_TERA_ORB_CHARGED    0x21 // Tera Orb Charge
+#define FLAG_TERA_ORB_NO_COST    0x22 // Free Tera
+#define FLAG_DYNAMAX_BATTLE    0x23 // Can Dynamax
+#define FLAG_TRAINERS_REQUIRE_TALK    0x24 // Talk to trainers to battle
+#define FLAG_ALWAYS_FLY    0x25 // Can fly without HM
+#define FLAG_FORCE_SHINY    0x26 // Shiny
+#define FLAG_FORCE_NO_SHINY    0x27 // Non-Shiny
+#define FLAG_DEXNAV_SEARCHING    0x28 // Dexnav search
+#define FLAG_DEXNAV_GET    0x29 // Dexnav in menu
+#define FLAG_DEXNAV_MODE    0x2A // Dexnav can show hidden
+#define FLAG_RECEIVED_STARTER_1    0x2B // Unused Flag
+#define FLAG_RECEIVED_STARTER_2    0x2C // Unused Flag
+#define FLAG_RECEIVED_STARTER_3    0x2D // Unused Flag
 #define FLAG_UNUSED_0x02E    0x2E // Unused Flag
 #define FLAG_UNUSED_0x02F    0x2F // Unused Flag
 #define FLAG_UNUSED_0x030    0x30 // Unused Flag

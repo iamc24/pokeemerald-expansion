@@ -14141,4 +14141,20 @@ const struct Item gItemsInfo[] =
         .iconPic = gItemIcon_PokeshiDoll,
         .iconPalette = gItemIconPalette_PokeshiDoll,
     },
+
+    [ITEM_OMNI_RING] =
+    {
+        .name = _("Omni-Ring"),
+        .price = 0,
+        .importance = 1,
+        .description = COMPOUND_STRING(
+            "Capable of drawing\n"
+            "out a Pokémon's\n"
+            "hidden potential."),
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_OmniRing,
+        .iconPalette = gItemIconPalette_OmniRing,
+    },
 };

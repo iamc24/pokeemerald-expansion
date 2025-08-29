@@ -75,7 +75,7 @@ bool32 CanTerastallize(u32 battler)
     {
         // Skip all other checks in this block, go to HasTrainerUsedGimmick
     }
-    else if (!CheckBagHasItem(ITEM_TERA_ORB, 1))
+    else if (!CheckBagHasItem(ITEM_TERA_ORB, 1) && !CheckBagHasItem(ITEM_OMNI_RING, 1))
     {
         return FALSE;
     }
@@ -153,9 +153,9 @@ uq4_12_t GetTeraMultiplier(u32 battler, u32 type)
                 return UQ_4_12(1.5);
         }
         else if (shouldBoost)
-            return UQ_4_12(1.2);
+            return UQ_4_12(1.5);
         else
-            return UQ_4_12(1.0);
+            return UQ_4_12(1.25);
     }
     // Base and Tera type.
     if (type == teraType && IS_BATTLER_OF_BASE_TYPE(battler, type))

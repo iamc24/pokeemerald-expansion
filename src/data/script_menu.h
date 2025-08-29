@@ -783,6 +783,45 @@ static const struct MenuAction MultichoiceList_Exit[] =
     {gText_Exit},
 };
 
+static const struct MenuAction MultichoiceList_GrassStarters[] =
+{
+    {COMPOUND_STRING("BULBASAUR")},
+    {COMPOUND_STRING("CHIKORITA")},
+    {COMPOUND_STRING("TREECKO")},
+    {COMPOUND_STRING("TURTWIG")},
+    {COMPOUND_STRING("SNIVY")},
+    {COMPOUND_STRING("CHESPIN")},
+    {COMPOUND_STRING("ROWLET")},
+    {COMPOUND_STRING("GROOKEY")},
+    {COMPOUND_STRING("SPRIGATITO")},
+};
+
+static const struct MenuAction MultichoiceList_FireStarters[] =
+{
+    {COMPOUND_STRING("CHARMANDER")},
+    {COMPOUND_STRING("CYNDAQUIL")},
+    {COMPOUND_STRING("TORCHIC")},
+    {COMPOUND_STRING("CHIMCHAR")},
+    {COMPOUND_STRING("TEPIG")},
+    {COMPOUND_STRING("FENNEKIN")},
+    {COMPOUND_STRING("LITTEN")},
+    {COMPOUND_STRING("SCORBUNNY")},
+    {COMPOUND_STRING("FUECOCO")},
+};
+
+static const struct MenuAction MultichoiceList_WaterStarters[] =
+{
+    {COMPOUND_STRING("SQUIRTLE")},
+    {COMPOUND_STRING("TOTODILE")},
+    {COMPOUND_STRING("MUDKIP")},
+    {COMPOUND_STRING("PIPLUP")},
+    {COMPOUND_STRING("OSHAWOTT")},
+    {COMPOUND_STRING("FROAKIE")},
+    {COMPOUND_STRING("POPPLIO")},
+    {COMPOUND_STRING("SOBBLE")},
+    {COMPOUND_STRING("QUAXLY")},
+};
+
 struct MultichoiceListStruct
 {
     const struct MenuAction *list;
@@ -906,6 +945,9 @@ static const struct MultichoiceListStruct sMultichoiceLists[] =
     [MULTI_FALLARBOR_TENT_RULES]       = MULTICHOICE(MultichoiceList_FallarborTentRules),
     [MULTI_TAG_MATCH_TYPE]             = MULTICHOICE(MultichoiceList_TagMatchType),
     [MULTI_BERRY_PLOT]                 = MULTICHOICE(MultichoiceList_BerryPlot),
+    [MULTI_GRASS_STARTERS]             = MULTICHOICE(MultichoiceList_GrassStarters),
+    [MULTI_FIRE_STARTERS]              = MULTICHOICE(MultichoiceList_FireStarters),
+    [MULTI_WATER_STARTERS]             = MULTICHOICE(MultichoiceList_WaterStarters),
 };
 
 const u8 *const gStdStrings[] =

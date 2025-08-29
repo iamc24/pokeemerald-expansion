@@ -31,8 +31,8 @@
     {
       "local_id": "LOCALID_BIRCHS_LAB_BIRCH",
       "graphics_id": "OBJ_EVENT_GFX_PROF_BIRCH",
-      "x": 6,
-      "y": 4,
+      "x": 8,
+      "y": 5,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 0,
@@ -45,8 +45,8 @@
     {
       "local_id": "LOCALID_BIRCHS_LAB_RIVAL",
       "graphics_id": "OBJ_EVENT_GFX_VAR_0",
-      "x": 7,
-      "y": 4,
+      "x": 9,
+      "y": 5,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 1,
@@ -97,6 +97,48 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "LittlerootTown_ProfessorBirchsLab_EventScript_Chikorita",
       "flag": "FLAG_HIDE_LITTLEROOT_TOWN_BIRCHS_LAB_POKEBALL_CHIKORITA"
+    },
+    {
+      "local_id": "LOCALID_BIRCHS_LAB_GRASS_STARTER_BALL",
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 5,
+      "y": 4,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "LittlerootTown_ProfessorBirchsLab_EventScript_GrassStarter",
+      "flag": "FLAG_RECEIVED_STARTER_1"
+    },
+    {
+      "local_id": "LOCALID_BIRCHS_LAB_FIRE_STARTER_BALL",
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 6,
+      "y": 4,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "LittlerootTown_ProfessorBirchsLab_EventScript_FireStarter",
+      "flag": "FLAG_RECEIVED_STARTER_2"
+    },
+    {
+      "local_id": "LOCALID_BIRCHS_LAB_WATER_STARTER_BALL",
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 7,
+      "y": 4,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "LittlerootTown_ProfessorBirchsLab_EventScript_WaterStarter",
+      "flag": "FLAG_RECEIVED_STARTER_3"
     }
   ],
   "warp_events": [

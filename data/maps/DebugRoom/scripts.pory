@@ -1,0 +1,13 @@
+mapscripts DebugRoom_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION: DebugRoom_OnTransition
+}
+
+script DebugRoom_OnTransition {
+    setrespawn(HEAL_LOCATION_DEBUG_ROOM)
+    end
+}
+
+script DebugRoom_StevenTest {
+    setflag(FLAG_DYNAMAX_BATTLE)
+    call(MeteorFalls_StevensCave_EventScript_Steven)
+}

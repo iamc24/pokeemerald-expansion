@@ -150,16 +150,16 @@
 #define B_TRANSISTOR_BOOST          GEN_LATEST // In Gen9+, Transistor will only boost Electric-type moves by 1.3x as opposed to 1.5x.
 #define B_ILLUMINATE_EFFECT         GEN_LATEST // In Gen9+, Illuminate prevents accuracy reductions and ignores the target's evasion.
 #define B_WEAK_ARMOR_SPEED          GEN_LATEST // In Gen7+, Weak Armor raises Speed by 2 stages instead of 1 when hit by a physical move.
-#define B_PROTEAN_LIBERO            GEN_LATEST // In Gen9+, Protean and Libero change the user's type only once per Battle.
-#define B_INTREPID_SWORD            GEN_LATEST // In Gen9+, Intrepid Sword raises Attack by one stage only once per Battle.
-#define B_DAUNTLESS_SHIELD          GEN_LATEST // In Gen9+, Dauntless Shield raises Defense by one stage only once per Battle.
+#define B_PROTEAN_LIBERO            GEN_8      // In Gen9+, Protean and Libero change the user's type only once per Battle.
+#define B_INTREPID_SWORD            GEN_8      // In Gen9+, Intrepid Sword raises Attack by one stage only once per Battle.
+#define B_DAUNTLESS_SHIELD          GEN_8      // In Gen9+, Dauntless Shield raises Defense by one stage only once per Battle.
 #define B_DISGUISE_HP_LOSS          GEN_LATEST // In Gen8+, when a Disguised Mimikyu's Disguise is busted, upon changing to its Busted Form it loses HP equal to 1/8 of its maximum HP.
 #define B_ABILITY_TRIGGER_CHANCE    GEN_LATEST // In Gen3, Shed Skin, Cute Charm, Flame Body, Static and Poison Point have a 1/3 chance to trigger. In Gen 4+ it's 30%.
                                                // In Gen3, Effect Spore has a 10% chance to sleep, poison or paralyze, with an equal chance.
                                                // In Gen4, it's 30%. In Gen5+ it has 11% to sleep, 9% chance to poison and 10% chance to paralyze.
 #define B_PICKUP_WILD               GEN_LATEST // In Gen9+, Pickup allows its user to pickup its own used item at the end of the turn in wild battles.
 #define B_MAGIC_GUARD               GEN_LATEST // In Gen4 only, Magic Guard ignores immobilization caused by paralysis
-#define B_BATTLE_BOND               GEN_LATEST // In Gen9+, Battle Bond increases Atk, SpAtk and Speed by one stage, once per battle
+#define B_BATTLE_BOND               GEN_7      // In Gen9+, Battle Bond increases Atk, SpAtk and Speed by one stage, once per battle
 #define B_ATE_MULTIPLIER            GEN_LATEST // In Gen7+, -ate abilities (Aerilate, Galvanize, Normalize, Pixilate, Refrigerate) multiply damage by 1.2. Otherwise, it's 1.3, except Normalize which has no multiplier.
 
 // Item settings
@@ -173,7 +173,7 @@
 #define B_STEAL_WILD_ITEMS          GEN_LATEST // In Gen9, Thief and Covet steal a wild pokemon's item and send it to the bag. Before Gen9, the stolen item would be held by the Thief/Covet user.
 #define B_RESTORE_HELD_BATTLE_ITEMS GEN_LATEST // In Gen9, all non-berry items are restored after battle.
 #define B_SOUL_DEW_BOOST            GEN_LATEST // In Gens3-6, Soul Dew boosts Latis' Sp. Atk and Sp. Def. In Gen7+ it boosts the power of their Psychic and Dragon type moves instead.
-#define B_NET_BALL_MODIFIER         GEN_LATEST // In Gen7+, Net Ball's catch multiplier is x5 instead of x3.
+#define B_NET_BALL_MODIFIER         GEN_LATEST // In Gen7+, Net Ball's catch multiplier is x3.5 instead of x3.
 #define B_DIVE_BALL_MODIFIER        GEN_LATEST // In Gen4+, Dive Ball's effectiveness increases by x3.5 when Surfing or Fishing.
 #define B_NEST_BALL_MODIFIER        GEN_LATEST // Nest Ball's formula varies depending on the Gen. See Cmd_handleballthrow.
 #define B_REPEAT_BALL_MODIFIER      GEN_LATEST // In Gen7+, Repeat Ball's catch multiplier is x3.5 instead of x3.
@@ -183,8 +183,8 @@
 #define B_LURE_BALL_MODIFIER        GEN_LATEST // In Gen8+, Lure Ball's catch multiplier is x4. In Gen7, it's x5. In Gen6 and earlier, it's x3.
 #define B_HEAVY_BALL_MODIFIER       GEN_LATEST // In Gen7+, Heavy Ball's ranges change. See Cmd_handleballthrow.
 #define B_DREAM_BALL_MODIFIER       GEN_LATEST // In Gen8+, Dream Ball's catch multiplier is x4 when the target is asleep or has the ability Comatose.
-#define B_SPORT_BALL_MODIFIER       GEN_LATEST // In Gen8+, Sport Ball's catch multiplier was reduced from x1.5 to x1.
-#define B_SAFARI_BALL_MODIFIER      GEN_LATEST // In Gen8+, Safari Ball's catch multiplier was reduced from x1.5 to x1.
+#define B_SPORT_BALL_MODIFIER       GEN_7      // In Gen8+, Sport Ball's catch multiplier was reduced from x1.5 to x1.
+#define B_SAFARI_BALL_MODIFIER      GEN_7      // In Gen8+, Safari Ball's catch multiplier was reduced from x1.5 to x1.
 #define B_FRIEND_BALL_MODIFIER      GEN_LATEST // In Gen8+, Friend Ball's friendship boost was reduced from 200 to 150.
 #define B_SERENE_GRACE_BOOST        GEN_LATEST // In Gen5+, Serene Grace boosts the added flinch chance of King's Rock and Razor Fang.
 #define B_IRON_BALL                 GEN_LATEST // In Gen5+, Flying-type Pokemon holding Iron Ball take x1 damage from Ground-type moves regardless of their other types, except during Inverse Battles or if the Pokemon is grounded by any other effect.
@@ -207,9 +207,9 @@
 #define B_FLAG_NO_CATCHING          0     // If this flag is set, the ability to catch wild Pokémon is disabled.
 #define B_FLAG_NO_RUNNING           0     // If this flag is set, the ability to escape from wild battles is disabled. Also makes Roar/Whirlwind and Teleport (under Gen8) fail.
 #define B_FLAG_AI_VS_AI_BATTLE      0     // If this flag is set, the player's mons will be controlled by the ai next battles.
-#define B_FLAG_DYNAMAX_BATTLE       0     // If this flag is set, the ability to Dynamax in battle is enabled for all trainers.
-#define B_FLAG_TERA_ORB_CHARGED     0     // If this flag is set, the Tera Orb is charged. It is automatically set upon healing and cleared upon Terastallizing once configured.
-#define B_FLAG_TERA_ORB_NO_COST     0     // If this flag is set, the Tera Orb does not use up its charge upon Terastallization. In S/V, this occurs after an event with Terapagos.
+#define B_FLAG_DYNAMAX_BATTLE       FLAG_DYNAMAX_BATTLE     // If this flag is set, the ability to Dynamax in battle is enabled for all trainers.
+#define B_FLAG_TERA_ORB_CHARGED     FLAG_TERA_ORB_CHARGED   // If this flag is set, the Tera Orb is charged. It is automatically set upon healing and cleared upon Terastallizing once configured.
+#define B_FLAG_TERA_ORB_NO_COST     FLAG_TERA_ORB_NO_COST   // If this flag is set, the Tera Orb does not use up its charge upon Terastallization. In S/V, this occurs after an event with Terapagos.
 #define B_FLAG_SLEEP_CLAUSE         0     // If this flag is set, sleep clause is enabled; if the player / AI has already put a Pokémon on the opponent's side to sleep and it is still sleeping, another one can't be put to sleep. AI requires AI_FLAG_CHECK_BAD_MOVE to understand.
 #define B_FLAG_NO_WHITEOUT          0     // If this flag is set, the player can not white out against Trainers. Please note that the party is not healed automatically!
 
@@ -265,25 +265,25 @@
 // Interface settings
 #define B_ABILITY_POP_UP            TRUE  // In Gen5+, the Pokémon abilities are displayed in a pop-up, when they activate in battle.
 #define B_FAST_INTRO_PKMN_TEXT      TRUE  // If set to TRUE, battle intro texts print at the same time as animation of a Pokémon, as opposing to waiting for the animation to end.
-#define B_FAST_INTRO_NO_SLIDE       FALSE // If set to TRUE, the slide animation that happens at the beginning of the battle is skipped.
+#define B_FAST_INTRO_NO_SLIDE       TRUE  // If set to TRUE, the slide animation that happens at the beginning of the battle is skipped.
 #define B_FAST_HP_DRAIN             TRUE  // If set to TRUE, HP bars will move faster.
 #define B_FAST_EXP_GROW             TRUE  // If set to TRUE, EXP bars will move faster.
 #define B_SHOW_TARGETS              TRUE  // If set to TRUE, all available targets, for moves hitting 2 or 3 Pokémon, will be shown before selecting a move.
 #define B_SHOW_CATEGORY_ICON        TRUE  // If set to TRUE, it will show an icon in the summary and move relearner showing the move's category.
 #define B_HIDE_HEALTHBOX_IN_ANIMS   TRUE  // If set to TRUE, hides healthboxes during move animations.
-#define B_WAIT_TIME_MULTIPLIER      16    // This determines how long text pauses in battle last. Vanilla is 16. Lower values result in faster battles.
-#define B_QUICK_MOVE_CURSOR_TO_RUN  FALSE // If set to TRUE, pushing B in the battle options against a wild encounter will move the cursor to the run option
+#define B_WAIT_TIME_MULTIPLIER      8     // This determines how long text pauses in battle last. Vanilla is 16. Lower values result in faster battles.
+#define B_QUICK_MOVE_CURSOR_TO_RUN  TRUE  // If set to TRUE, pushing B in the battle options against a wild encounter will move the cursor to the run option
 #define B_RUN_TRAINER_BATTLE        TRUE  // If set to TRUE, players can run from Trainer battles. This is treated as a whiteout.
 #define B_MOVE_DESCRIPTION_BUTTON   L_BUTTON // If set to a button other than B_LAST_USED_BALL_BUTTON, pressing this button will open the move description menu
 #define B_SHOW_USELESS_Z_MOVE_INFO  FALSE // If set to TRUE, Z-moves without additional effects like newer gen status moves will say "no additional effect"
-#define B_ANIMATE_MON_AFTER_KO      TRUE // If set to TRUE, if a Pokémon on the opposite site faints, the non-fainted Pokemon will display a victory animation.
+#define B_ANIMATE_MON_AFTER_KO      TRUE  // If set to TRUE, if a Pokémon on the opposite site faints, the non-fainted Pokemon will display a victory animation.
 #define B_SHOW_DYNAMAX_MESSAGE      FALSE // If set to TRUE, an additional battle message is shown after completing Dynamaxing/Gigantamaxing.
 
 // Catching settings
 #define B_SEMI_INVULNERABLE_CATCH       GEN_LATEST // In Gen4+, you cannot throw a ball against a Pokemon that is in a semi-invulnerable state (dig/fly/etc)
 #define B_CATCHING_CHARM_BOOST          20         // % boost in Critical Capture odds if player has the Catching Charm.
 #define B_CRITICAL_CAPTURE              TRUE       // If set to TRUE, Critical Capture will be enabled.
-#define B_CRITICAL_CAPTURE_LOCAL_DEX    TRUE       // If set to FALSE, Critical Capture % is based off of the National Pokedex estimated by enabled generations.
+#define B_CRITICAL_CAPTURE_LOCAL_DEX    FALSE      // If set to FALSE, Critical Capture % is based off of the National Pokedex estimated by enabled generations.
 
 #define B_LAST_USED_BALL            TRUE       // If TRUE, the "last used ball" feature from Gen 7 will be implemented
 #define B_LAST_USED_BALL_BUTTON     R_BUTTON   // If last used ball is implemented, this button (or button combo) will trigger throwing the last used ball.
@@ -300,8 +300,8 @@
 #define B_AFFECTION_MECHANICS           TRUE       // In Gen6+, there's a stat called affection that can trigger different effects in battle. From LGPE onwards, those effects use friendship instead.
 #define B_TRAINER_CLASS_POKE_BALLS      GEN_LATEST // In Gen7+, trainers will use certain types of Poké Balls depending on their trainer class.
 #define B_TRAINER_MON_RANDOM_ABILITY    FALSE      // If this is set to TRUE a random legal ability will be generated for a trainer mon
-#define B_OBEDIENCE_MECHANICS           GEN_LATEST // In PLA+ (here Gen8+), obedience restrictions also apply to non-outsider Pokémon, albeit based on their level met rather than actual level
-#define B_USE_FROSTBITE                 FALSE      // In PLA, Frostbite replaces Freeze. Enabling this flag does the same here. Moves can still be cherry-picked to either Freeze or Frostbite. Freeze-Dry, Secret Power & Tri Attack depend on this config.
+#define B_OBEDIENCE_MECHANICS           GEN_7      // In PLA+ (here Gen8+), obedience restrictions also apply to non-outsider Pokémon, albeit based on their level met rather than actual level
+#define B_USE_FROSTBITE                 TRUE       // In PLA, Frostbite replaces Freeze. Enabling this flag does the same here. Moves can still be cherry-picked to either Freeze or Frostbite. Freeze-Dry, Secret Power & Tri Attack depend on this config.
 #define B_TOXIC_REVERSAL                GEN_LATEST // In Gen5+, bad poison will change to regular poison at the end of battles.
 #define B_TRY_CATCH_TRAINER_BALL        GEN_LATEST // In Gen4+, trying to catch a Trainer's Pokémon does not consume the Poké Ball.
 #define B_SLEEP_CLAUSE                  FALSE      // Enables Sleep Clause all the time in every case, overriding B_FLAG_SLEEP_CLAUSE. Use that for modularity.
@@ -309,7 +309,7 @@
 #define NUM_BEEPS_GEN_LATEST            4                    // Loops 4 times
 #define NUM_BEEPS_GEN_3                 -1                   // Loops infinitely
 #define NUM_BEEPS_OFF                   0                    // Doesn't play at all
-#define B_NUM_LOW_HEALTH_BEEPS          NUM_BEEPS_GEN_LATEST // This controls the number of times the "low health" beep will loop. Setting this value to NUM_BEEPS_OFF will disable the beep, while NUM_BEEPS_GEN_3 will loop infinitely. You can set this to any number you want, the defines listed are just for ease of use.
+#define B_NUM_LOW_HEALTH_BEEPS          NUM_BEEPS_OFF        // This controls the number of times the "low health" beep will loop. Setting this value to NUM_BEEPS_OFF will disable the beep, while NUM_BEEPS_GEN_3 will loop infinitely. You can set this to any number you want, the defines listed are just for ease of use.
 
 // Animation Settings
 #define B_NEW_SWORD_PARTICLE            FALSE    // If set to TRUE, it updates Swords Dance's particle.
@@ -338,7 +338,7 @@
 #define SHOW_TYPES_ALWAYS   1                    // Always show types in battle
 #define SHOW_TYPES_CAUGHT   2                    // Only show types if you've caught a species of the mon.
 #define SHOW_TYPES_SEEN     3                    // Only show types if you've seen a species of the mon.
-#define B_SHOW_TYPES        SHOW_TYPES_NEVER     // When to show type indicators next to Pokémon health bars in battle, while choosing a move after selecting a target Pokémon.
+#define B_SHOW_TYPES        SHOW_TYPES_SEEN      // When to show type indicators next to Pokémon health bars in battle, while choosing a move after selecting a target Pokémon.
 
 #define SHOW_EFFECTIVENESS_NEVER    0           // Never show effectiveness when selecting moves.
 #define SHOW_EFFECTIVENESS_ALWAYS   1           // Always show effectiveness when selecting moves.
